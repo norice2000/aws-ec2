@@ -1,3 +1,5 @@
 module "ec2-module" {
   source = "./modules/ec2/"
+  ami_id = "ami-091d7d61336a4c68f"
+  subnet_id = "subnet-0b7c4c7eb86eb5ef4"
 }

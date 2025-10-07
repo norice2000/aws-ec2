@@ -1,7 +1,7 @@
 resource "aws_instance" "app_server" {
-  ami           = "ami-091d7d61336a4c68f"
+  ami           = var.ami_id
   instance_type = "t3.micro"
-  subnet_id     = "subnet-0b7c4c7eb86eb5ef4"
+  subnet_id     = var.subnet_id
   tags = {
     Name = "hello-world"
   }
